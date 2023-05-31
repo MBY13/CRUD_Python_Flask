@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excluir Usuário</title>
+</head>
+<body>
+    <h1>Excluir Usuário</h1>
+    <p>Você tem certeza que deseja excluir o usuário "{{ user.name }}"?</p>
+    <form method="POST" action="{{ url_for('delete', user_id=user.id) }}">
+        <input type="submit" value="Excluir">
+    </form>
+</body>
+</html>
